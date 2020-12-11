@@ -1,5 +1,0 @@
-Key Promoter X
-String Manipulation
-com.clutcher.comments_highlighter
-com.intellij.plugins.watcher
-izhangzhihao.rainbow.brackets
