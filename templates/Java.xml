@@ -1,0 +1,22 @@
+<templateSet group="Java">
+  <template name="St" value="String " description="String" toReformat="false" toShortenFQNames="false" deactivated="true">
+    <context />
+  </template>
+  <template name="st" value="String" description="String" toReformat="false" toShortenFQNames="false">
+    <context>
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="soutv" value="System.out.println(&quot;$EXPR_COPY$: &quot; + $EXPR$);" description="Prints a value to System.out" toReformat="true" toShortenFQNames="true">
+    <variable name="EXPR" expression="variableOfType(&quot;&quot;)" defaultValue="&quot;expr&quot;" alwaysStopAt="true" />
+    <variable name="EXPR_COPY" expression="escapeString(EXPR)" defaultValue="" alwaysStopAt="false" />
+    <context />
+  </template>
+  <template name="sop" value="System.out.print(&quot;$STRING$: &quot;);" description="system.out.print" toReformat="true" toShortenFQNames="true">
+    <variable name="STRING" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
